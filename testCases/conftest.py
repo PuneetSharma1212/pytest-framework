@@ -1,4 +1,4 @@
-# import xdist
+import xdist
 from selenium import webdriver
 import pytest
 
@@ -27,7 +27,7 @@ def pytest_configure(config):
     config._metadata['Tester'] = 'Puneet'
 
 # It is hook for delete/Modify Environment info to HTML Report
-@pytest.hookimpl(optionalhook=True)
-def pytest_metadata(metadata):
-    metadata.pop("JAVA_HOME", None)
-    metadata.pop("Plugins", None)
+# @pytest.hookimpl(optionalhook=True)
+# def pytest_metadata(metadata):
+#     metadata.pop("JAVA_HOME", None)
+#     metadata.pop("Plugins", None)
