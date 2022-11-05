@@ -1,0 +1,9 @@
+pytest
+time
+selenium
+pytest-xdist
+string
+random
+logging
+configparser
+openpyxl
